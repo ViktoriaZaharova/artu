@@ -332,13 +332,16 @@ a
       stroke-width: 2px
   &:before
     display: none
+  svg
+    stroke: #333
 
-.slick-next
-  right: calc(50% - 145px)
+.home
+  .slick-next
+    right: calc(50% - 145px)
 
 
-.slick-prev
-  left: calc(50% - 145px)
+  .slick-prev
+    left: calc(50% - 145px)
 
 .box-variable-container
   z-index: 2
@@ -351,6 +354,200 @@ a
   width: 27px
   height: 27px
   margin: 0 0 -10px auto
+
+
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+  padding: 0 15px
+  box-sizing: border-box
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+//header
+header
+  background: linear-gradient(270deg, #45ACAF 0%, #C1DAE7 16.15%, #BB2B83 33.33%, #BA2E84 40.8%, #DE8A93 57.81%, #F9F301 75.69%, #E68700 98.16%)
+  padding: 16px 0
+  color: #fff
+  font-size: 18px
+  .container
+    justify-content: flex-end
+    align-items: center
+
+.phone
+  display: flex
+  align-items: center
+  color: #fff
+  margin: 0 35px 0 45px
+  font-size: 24px
+  font-weight: bold
+  &:hover
+    color: #000
+
+.phone-icon
+  margin: 0 14px 0 0
+  width: 17px
+
+.address
+  display: flex
+  align-items: center
+  .icon
+    width: 18px
+    margin: 0 10px 0 0
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  justify-content: space-between
+  width: 37px
+  height: 25px
+  margin: 0 auto 0 0
+  span
+    width: 100%
+    background: #FFFFFF
+    height: 3px
+    border-radius: 10px
+    display: block
+    &:nth-child(even)
+      width: 30px
+
+//main
+main
+  color: #333333
+
+.main-home
+  background: #C4C4C4 url("../img/bg1.svg") no-repeat center
+    size: cover
+  position: relative
+  .container
+    align-items: flex-start
+    justify-content: space-between
+
+h1
+  text-transform: uppercase
+  font-size: 48px
+  font-weight: bold
+  margin: 0 0 17px
+  text-align: right
+  position: relative
+  color: #333333
+  text-shadow: 1px 0 0 #D59A6C, -1px 0 0 #C4824A, 0 1px 0 #FADAA0, 0 -1px 0 #FFFAC9, 1px 1px #D59A6C, -1px -1px 0 #C4824A, 1px -1px 0 #FADAA0, -1px 1px 0 #FFFAC9
+
+
+.title-description
+  margin: 0 0 66px
+  color: #333333
+  font-size: 24px
+  text-transform: uppercase
+  text-align: right
+
+.main-logo
+  max-width: 250px
+  margin: 0 0 43px
+
+.main-home__content
+  padding: 0 0 0 28px
+  max-width: 575px
+  width: 100%
+  .box-text
+    line-height: 24px
+
+.main-menu
+  position: absolute
+  right: 0
+  top: 36px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  z-index: 1
+  li
+    margin: 0 45px 0 0
+    a
+      text-transform: uppercase
+      color: #333333
+      position: relative
+      &:hover
+        color: #C24600
+        font-weight: bold
+    .active
+      color: #C24600
+      font-weight: bold
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translate(-50%,0)
+        width: 11px
+        height: 11px
+        background: url("../img/figure1.svg") no-repeat center
+          size: contain
+        top: -14px
+
+.main-home__slider
+  width: 100%
+  position: relative
+  z-index: 2
+  .slick-next
+    right: 0
+  .slick-prev
+    left: 0
+  .slick-arrow
+    width: 12px
+    height: 24px
+    svg
+      width: 100%
+      height: 100%
+      transition: .3s ease
+    &:hover
+      svg
+        path
+          stroke: #fff
+
+.main-home__box
+  max-width: 306px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+
+.main-home__slider-wrapper
+  position: relative
+  max-width: 465px
+  width: 100%
+  padding: 118px 0 43px
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    right: -292px
+    height: 595px
+    width: 1200px
+    background: url("../img/slider-overlay.svg") no-repeat center
+      size: cover
+    z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    width: 602px
+    height: 521px
+    right: 49px
+    top: 72px
+    background: url("../img/decor1.svg") no-repeat center
+      size: contain
+
+.btn-360
+  width: 50px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  right: 0
+  bottom: 43px
 
 
 @import "media"
