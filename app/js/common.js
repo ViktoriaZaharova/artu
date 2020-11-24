@@ -51,3 +51,48 @@ $('.main-home__slider').slick({
         '</svg>\n</button>',
     fade: true
 });
+
+$('.product-slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product-slider-previews'
+});
+
+$('.product-slider-previews').slick({
+    slidesToShow: 3,
+    focusOnSelect: true,
+    asNavFor: '.product-slider',
+    arrows: true,
+    nextArrow: '<button type="button" class="slick-next"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '    <path d="M0.999999 1L7 7L1 13" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+        '</svg>\n</button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '    <path d="M7 13L1 7L7 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+        '</svg>\n</button>'
+});
+
+$('.go_to').click(function () {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});
+
+$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+
+    $(".product-slider").slick('reinit');
+    $(".product-slider-previews").slick('reinit');
+});
+
+$('.review-view').click(function (e) {
+    e.preventDefault();
+    $('.reviews-preview').fadeOut();
+    $('.reviews-hidden').fadeIn();
+});
