@@ -1,0 +1,357 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #ffff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+.home
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  position: relative
+  background: #F2F2F2
+
+.home-item
+  width: 50%
+  display: flex
+  align-items: flex-end
+  >*
+    position: relative
+
+.home-title
+  color: #727272
+  font-size: 36px
+  transform: rotate(-90deg)
+  padding: 31px 30px 14px 58px
+  position: absolute
+  left: -80px
+  bottom: 80px
+  text-transform: uppercase
+  border-bottom: 4px solid #727272
+
+.home-img
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  &:before
+    content: ''
+    position: absolute
+  img
+    position: relative
+
+.home-menu-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: 1
+  transform: translate(-50%,-50%)
+  &:before
+    content: ''
+    width: 2px
+    height: 285px
+    background: #727272
+    margin: 0 auto 56px
+  &:after
+    content: ''
+    width: 2px
+    height: 285px
+    background: #727272
+    margin: 56px auto 0
+  .box-variable-wrap
+    display: none
+
+.home-menu
+  display: flex
+  flex-direction: column
+  align-items: center
+  a
+    font-size: 18px
+    color: #333333
+    text-transform: uppercase
+    padding: 10px 10px 11px
+    &:hover
+      font-weight: bold
+  li
+    border-bottom: 1px solid #727272
+    position: relative
+    &:last-child
+      border: none
+  .active
+    font-weight: bold
+    border: none
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 2px
+      background: linear-gradient(to right, rgba(213,154,108,1) 0%,rgba(196,130,74,1) 19%,rgba(250,218,160,1) 41%,rgba(255,250,201,1) 69%,rgba(230,135,0,1) 100%)
+
+.home-left
+  padding: 155px 0 122px 111px
+
+
+  .home-item__line
+    position: absolute
+    left: 0
+    top: 0
+    max-width: 1227px
+    height: 60px
+    width: 100%
+    background: linear-gradient(269.97deg, #727272 46.89%, rgba(114, 114, 114, 0) 83.43%)
+    transform: rotate(180deg)
+  .home-img
+    max-width: 340px
+    margin: 0 70px 0 0
+    &:before
+      width: 1155px
+      height: 958px
+      background: url("../img/decor2.svg") no-repeat center
+        size: contain
+      top: -34px
+      right: -365px
+
+.logo2
+  max-width: 347px
+  width: 100%
+
+.logo1
+  max-width: 333px
+  width: 100%
+  margin: 0 25px auto 0
+
+.home-right
+  .home-img
+    max-width: 464px
+
+.home-item-col
+  display: flex
+  flex-direction: column
+  align-items: center
+  z-index: 2
+
+.box-variable-wrap
+  background: linear-gradient(left, rgba(213,154,108,1) 0%,rgba(196,130,74,1) 19%,rgba(250,218,160,1) 41%,rgba(255,250,201,1) 69%,rgba(230,135,0,1) 100%)
+  max-width: 278px
+  width: 100%
+  padding: 2px
+  border-radius: 5px
+  margin: 0 auto 125px
+
+.box-variable
+  border-radius: 5px
+  background: #F2F2F2
+  a
+    border-radius: 5px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 18px
+    color: #333333
+    height: 48px
+    text-transform: uppercase
+  li
+    width: 100%
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 2px
+      background: linear-gradient(to right, rgba(213,154,108,1) 0%,rgba(196,130,74,1) 19%,rgba(250,218,160,1) 41%,rgba(255,250,201,1) 69%,rgba(230,135,0,1) 100%)
+    &:last-child
+      &:before
+        display: none
+  .active
+    border-radius: 5px
+    a
+      background: #333333
+      font-weight: bold
+      z-index: 1
+      position: relative
+      span
+
+        background: -webkit-linear-gradient(-91deg, rgba(213,154,108,1) 0%,rgba(196,130,74,1) 19%,rgba(250,218,160,1) 41%,rgba(255,250,201,1) 69%,rgba(230,135,0,1) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: calc(100% + 2px)
+      height: calc(100% + 2px)
+      z-index: 0
+      border-radius: inherit
+      background: linear-gradient(left, rgba(213,154,108,1) 0%,rgba(196,130,74,1) 19%,rgba(250,218,160,1) 41%,rgba(255,250,201,1) 69%,rgba(230,135,0,1) 100%)
+
+.home-right
+  padding: 44px 115px 108px 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  .home-title
+    left: auto
+    right: -82px
+    top: 82px
+    bottom: auto
+    border: none
+    padding: 26px 57px 23px 35px
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      width: 100%
+      height: 2px
+      background: linear-gradient(270deg, #45ACAF 0%, #9BAEBC 13.71%, #BB2B83 29.95%, #BA2E84 38.07%, #DE8A93 47.21%, #F9F301 60.2%, #E68700 73.33%, rgba(230, 135, 0, 0) 100%)
+      transform: rotate(180deg)
+  .home-img
+    &:before
+      background: url("../img/decor1.svg") no-repeat center
+        size: contain
+      width: 1106px
+      height: 958px
+      top: -194px
+      left: 50%
+      transform: translate(-50%,0)
+  .home-item__line
+    position: absolute
+    right: 0
+    bottom: 0
+    height: 60px
+    max-width: 1311px
+    width: 100%
+    background: linear-gradient(270deg, #45ACAF 0%, #9BAEBC 10.61%, #BB2B83 23.18%, #BA2E84 29.47%, #DE8A93 36.54%, #F9F301 46.59%, #E68700 56.76%, rgba(230, 135, 0, 0) 77.4%)
+
+
+.slick-arrow
+  width: 6px
+  height: 12px
+  z-index: 1
+  opacity: 1
+  background: transparent
+  &:hover, &:focus
+    background: transparent
+    svg
+      stroke-width: 2px
+  &:before
+    display: none
+
+.slick-next
+  right: calc(50% - 145px)
+
+
+.slick-prev
+  left: calc(50% - 145px)
+
+.box-variable-container
+  z-index: 2
+  width: 100%
+
+.box-variable-container__close
+  display: none
+  align-items: center
+  justify-content: center
+  width: 27px
+  height: 27px
+  margin: 0 0 -10px auto
+
+
+@import "media"
+// Всегда в конце

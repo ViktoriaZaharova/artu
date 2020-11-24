@@ -1,0 +1,439 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px)
+  .home-left .home-img
+    max-width: 280px
+
+
+
+
+
+@media only screen and (max-width : 1820px)
+  .home-left .home-img
+    margin: 0 20px 0 0
+    &:before
+      width: 1000px
+      height: 800px
+
+  .logo2
+    max-width: 300px
+
+  .home-right .home-img
+    max-width: 400px
+    &:before
+      width: 1000px
+      height: 800px
+
+@media only screen and (max-width : 1700px)
+  .logo1
+    max-width: 250px
+
+  .home-right .home-img
+    max-width: 300px
+    &:before
+      width: 750px
+      height: 520px
+      top: -50px
+
+  .home-left .home-img
+    max-width: 250px
+    &:before
+      width: 800px
+      height: 600px
+      bottom: -40px
+      right: -250px
+
+  .logo2
+    max-width: 198px
+
+  .home-title
+    font-size: 24px
+    bottom: 49px
+    left: -49px
+    padding: 15px 30px 12px 17px
+
+  .home-right .home-title
+    padding: 14px 21px 13px 25px
+    top: 50px
+    right: -49px
+
+  .home-left .home-item__line
+    max-width: 641px
+    height: 40px
+
+  .home-right .home-item__line
+    max-width: 663px
+    height: 40px
+
+  .home-menu:after, .home-menu:before
+    height: 218px
+
+@media only screen and (max-width : 1400px)
+  .home-left
+    padding: 88px 14px 56px
+    position: relative
+    .box-variable-wrap
+      display: none
+    .home-img
+      margin: 0 0 98px
+      max-width: 223px
+      &:before
+        width: 637px
+        height: 541px
+        right: -212px
+        top: 26px
+
+  .home-item-col
+    margin: 0 0 0 -20px
+    position: inherit
+
+  .home-menu-wrapper
+    &:after
+      margin: 0 auto
+      height: 98px
+    &:before
+      margin: 0 auto 40px
+      height: 218px
+    .box-variable-wrap
+      display: block
+      margin: 19px auto 0
+
+  .logo1
+    max-width: 204px
+    margin: 0 -80px auto 0
+    z-index: 1
+
+  .home-right
+    padding: 40px 55px 73px 10px
+    .home-img
+      max-width: 283px
+      margin: 155px 0 0
+      &:before
+        width: 630px
+        height: 546px
+        top: -137px
+        left: -124px
+        transform: none
+
+  .box-variable-container
+    width: auto
+
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 860px)
+  .home
+    flex-direction: column-reverse
+    align-items: flex-start
+
+  .home-right
+    padding: 90px 96px 36px 102px
+    align-items: flex-end
+    .home-title
+      top: 75px
+      padding: 9px 15px 29px
+    .home-img
+      margin: 0
+      max-width: 219px
+      &:before
+        width: 451px
+        height: 389px
+        top: -35px
+        right: -130px
+        left: auto
+    .home-item__line
+      bottom: auto
+      top: 0
+      width: 100%
+      max-width: none
+      transform: rotate(180deg)
+      background: linear-gradient(270deg, #45ACAF 0%, #9BAEBC 13.71%, #BB2B83 29.95%, #BA2E84 38.07%, #DE8A93 47.21%, #F9F301 60.2%, #E68700 73.33%, rgba(230, 135, 0, 0) 100%)
+
+  .home-item
+    width: 100%
+    justify-content: space-between
+
+  .logo1
+    order: 1
+    margin: 0 0 45px
+    max-width: 190px
+
+  .home-menu-wrapper
+    position: relative
+    width: 100%
+    transform: none
+    left: 0
+    &:before, &:after
+      display: none
+    .box-variable-wrap
+      display: none
+
+  .home-menu
+    width: 100%
+    display: block
+    border:
+      top: 1px solid #727272
+      bottom: 1px solid #727272
+    .active
+      font-weight: normal
+
+      &:before
+        display: none
+    li
+      border: none
+      margin: 0 auto
+      width: 287px
+    a
+      padding: 14px 10px 13px
+      text-align: center
+    .slick-current
+      a
+        font-weight: bold
+
+  .home-left
+    padding: 26px 142px 50px 59px
+    align-items: flex-start
+    .home-img
+      margin: 0
+      max-width: 174px
+      order: 1
+      &:before
+        width: 420px
+        height: 348px
+        top: 32px
+        right: auto
+        bottom: auto
+        left: -107px
+    .home-item__line
+      max-width: 100%
+      top: auto
+      bottom: 0
+      background: linear-gradient(270.24deg, #727272 3.82%, rgba(114, 114, 114, 0) 99.79%)
+      transform: none
+    .home-title
+      bottom: 80px
+      padding: 31px 27px 8px 12px
+      border-width: 2px
+    .box-variable-wrap
+      display: block
+      margin: 0 34px 0 0
+      width: 189px
+
+  .logo2
+    max-width: 218px
+
+  .box-variable-container
+    position: absolute
+    top: 8px
+    right: 244px
+
+  .home-item-col
+    position: initial
+
+  .box-variable a
+    height: 42px
+
+  .box-variable-container__close
+    display: flex
+
+
+
+@media only screen and (min-width : 650px) and (max-width: 735px)
+  .home
+    flex-direction: row
+    align-items: stretch
+
+  .home-item
+    width: 50%
+
+  .home-right
+    padding: 18px 71px 52px 36px
+    align-items: flex-end
+    justify-content: flex-start
+    flex-direction: column-reverse
+    .home-item__line
+      width: 50%
+      top: auto
+      bottom: 0
+      background: linear-gradient(270deg, #45ACAF 0%, #9BAEBC 13.71%, #BB2B83 29.95%, #BA2E84 38.07%, #DE8A93 47.21%, #F9F301 60.2%, #E68700 73.33%, rgba(230, 135, 0, 0) 100%)
+      transform: none
+    .home-img
+      max-width: 155px
+      &:before
+        width: 289px
+        height: 250px
+        top: -35px
+        left: -87px
+    .home-title
+      padding: 10px 15px 13px
+      top: 40px
+
+  .logo1
+    max-width: 106px
+    margin: 0 auto -10px 0
+
+  .box-variable-container
+    bottom: 72px
+    right: 32px
+    top: auto
+    z-index: 1
+
+  .home-left
+    padding: 53px 51px 52px
+    justify-content: flex-start
+    align-items: flex-end
+    position: initial
+    .home-img
+      max-width: 131px
+      order: inherit
+      &:before
+        width: 313px
+        height: 260px
+        top: 0
+        left: auto
+        right: -66px
+    .home-item__line
+      width: 50%
+      top: 0
+      bottom: auto
+      right: auto
+      left: 0
+      transform: rotate(180deg)
+      background: linear-gradient(270.24deg, #727272 3.82%, rgba(114, 114, 114, 0) 99.79%)
+    .home-title
+      font-size: 20px
+      padding: 13px 10px 9px 17px
+      border-width: 2px
+      bottom: 35px
+      left: -35px
+
+  .logo2
+    max-width: 93px
+    margin: 0 0 20px 13px
+
+  .home-menu-wrapper
+    position: absolute
+    transform: translate(-50%,-50%)
+    left: 50%
+    top: 50%
+    width: auto
+    &:before, &:after
+      height: 100px
+      width: 1px
+    &:after
+      margin: 11px auto 0
+    &:before
+      margin: 0 auto 11px
+    &:before, &:after
+      display: inline-block
+    .box-variable-wrap
+      width: 0
+
+  .home-menu
+    width: 100%
+    border: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    li
+      border-bottom: 1px solid #727272
+      width: auto
+    .active
+      &:before
+        width: 100%
+        display: block
+    a
+      font-size: 16px
+      padding: 10px 13px
+      box-sizing: border-box
+      width: 100%
+
+
+@media only screen and (max-width : 650px)
+  .home-menu li
+    width: 259px
+
+  .slick-prev
+    left: calc(50% - 130px)
+
+  .slick-next
+    right: calc(50% - 130px)
+
+  .box-variable-container
+    display: none
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 575px)
+  .logo2
+    max-width: 139px
+
+  .home-left
+    padding: 11px 56px 51px 16px
+    .home-img
+      max-width: 153px
+      &:before
+        width: 369px
+        height: 306px
+        top: 30px
+        left: -92px
+
+  .home-item-col
+    margin: 50px 0 0
+
+  .home-right
+    padding: 77px 16px 36px 44px
+    .home-img
+      max-width: 188px
+      &:before
+        width: 396px
+        height: 342px
+        top: -22px
+        right: -74px
+
+  .logo1
+    max-width: 136px
+
+
+
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
