@@ -488,7 +488,8 @@ h1
   padding: 0 0 0 28px
   max-width: 575px
   width: 100%
-
+  position: relative
+  z-index: 1
   .box-text
     line-height: 24px
 
@@ -499,7 +500,7 @@ h1
   display: flex
   align-items: center
   flex-wrap: wrap
-  z-index: 1
+  z-index: 2
 
   li
     margin: 0 45px 0 0
@@ -597,6 +598,7 @@ h1
   position: absolute
   right: 0
   bottom: 43px
+  z-index: 1
 
 //catalog
 .catalog
@@ -1191,6 +1193,9 @@ strong
   justify-content: center
   position: relative
   margin: -60px -40px 0 -133px
+  max-height: 835px
+  img
+    max-height: 100%
   &:before
     content: ''
     position: absolute
@@ -1217,6 +1222,7 @@ strong
     max-width: 476px
     width: 100%
     margin: 0 0 56px
+    font-size: 20px
   .form
     display: flex
     align-items: flex-start

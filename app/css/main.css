@@ -524,7 +524,9 @@ h1 {
 .main-home__content {
   padding: 0 0 0 28px;
   max-width: 575px;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 1; }
   .main-home__content .box-text {
     line-height: 24px; }
 
@@ -540,7 +542,7 @@ h1 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  z-index: 1; }
+  z-index: 2; }
   .main-menu li {
     margin: 0 45px 0 0; }
     .main-menu li a {
@@ -637,7 +639,8 @@ h1 {
           justify-content: center;
   position: absolute;
   right: 0;
-  bottom: 43px; }
+  bottom: 43px;
+  z-index: 1; }
 
 .catalog {
   margin: 62px 0 36px; }
@@ -1314,7 +1317,10 @@ strong {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin: -60px -40px 0 -133px; }
+  margin: -60px -40px 0 -133px;
+  max-height: 835px; }
+  .help-img img {
+    max-height: 100%; }
   .help-img:before {
     content: '';
     position: absolute;
@@ -1341,7 +1347,8 @@ strong {
   .help-content p {
     max-width: 476px;
     width: 100%;
-    margin: 0 0 56px; }
+    margin: 0 0 56px;
+    font-size: 20px; }
   .help-content .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1487,9 +1494,56 @@ strong {
     width: auto; } }
 
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .phone {
+    margin: 0 20px 0 65px; }
+  .main-home__content {
+    max-width: 530px;
+    padding: 0; }
+  .main-home__slider-wrapper {
+    max-width: 377px; }
+  .main-home__slider-wrapper:after {
+    right: -36px; }
+  .main-home__slider-wrapper:before {
+    width: 823px;
+    height: 631px;
+    right: -14px; }
+  .help-img {
+    max-width: 565px;
+    margin: -55px 0 0 -39px; }
+    .help-img:before {
+      width: 860px; }
+  .help-content {
+    padding: 58px 0 45px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0 0 auto; } }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px) {
+  .help-content h2 {
+    margin: 0 0 23px; }
+  .help-content p {
+    margin: 0 0 34px; }
+  .help-content .form {
+    margin: 0 auto;
+    max-width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .help-content .form-group {
+    max-width: none; }
+    .help-content .form-group label:last-child {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+  .help-content .consent {
+    text-align: center;
+    margin: 0 auto 35px; } }
+
 @media only screen and (max-width: 992px) {
   /**/ }
 
