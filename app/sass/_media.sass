@@ -252,6 +252,10 @@
     max-width: 158px
     margin: 0 0 59px
 
+  .main-logo2
+    max-width: 195px
+    margin: 46px auto 70px
+
   h1
     font-size: 40px
     text-align: left
@@ -296,6 +300,9 @@
 
   .catalog
     margin: 14px 0 30px
+
+  .main-home__box2
+    max-width: 177px
 
 @media only screen and (max-width : 860px)
   .home
@@ -431,7 +438,6 @@
 
   .tabs__caption
     .slick-active
-      box-shadow: none
       background: transparent
       span
         color: #000
@@ -483,6 +489,18 @@
         -webkit-text-fill-color: transparent
         width: 100%
         height: 100%
+
+  .tabs__caption2
+
+    .slick-active
+      &:before
+        display: none
+      span
+        color: #fff
+        background: transparent
+        -webkit-text-fill-color: inherit
+        -webkit-background-clip: inherit
+
 
   .products-information-wrapper
     .name-product, .line-wrapper, .document-wrapper
@@ -784,6 +802,22 @@
     .form
       margin: 0
 
+  .main-logo2
+    margin: 20px 0 0
+    max-width: 118px
+
+  .main-home__slider-wrapper2:before
+    background: url("../img/slider-overlay-mob2.svg") no-repeat center
+      size: contain
+
+  .main-home__slider-wrapper2:after
+    width: 501px
+    height: 417px
+    right: -85px
+    top: -37px
+
+  .main-home__box2
+    max-width: 192px
 
 @media only screen and (max-width : 650px)
   .home-menu li
@@ -949,3 +983,9 @@
 
   .help-content h2
     font-size: 40px
+
+  header
+    font-size: 14px
+
+  .phone
+    font-size: 20px

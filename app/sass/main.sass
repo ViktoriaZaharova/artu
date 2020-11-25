@@ -407,6 +407,9 @@ header
     justify-content: flex-end
     align-items: center
 
+.header
+  background: #727272
+
 .phone
   display: flex
   align-items: center
@@ -589,6 +592,18 @@ h1
     background: url("../img/decor1.svg") no-repeat center
       size: contain
 
+.main-home__slider-wrapper2
+  &:before
+    background: url("../img/slider-overlay2.svg") no-repeat center
+      size: cover
+  &:after
+    background: url("../img/decor2.svg") no-repeat center
+      size: contain
+    width: 593px
+    height: 494px
+    right: 10px
+    top: 83px
+
 .btn-360
   width: 50px
   height: 50px
@@ -599,6 +614,17 @@ h1
   right: 0
   bottom: 43px
   z-index: 1
+
+.main-logo2
+  margin: 35px auto 54px
+
+.h1
+  text-shadow: none
+  color: #BB2214
+  text-align: left
+
+.title-description2
+  margin: -50px 0 62px
 
 //catalog
 .catalog
@@ -701,6 +727,18 @@ h1
       width: 100%
       height: 100%
 
+.tabs__caption2
+  &:before
+    background: #BB2214
+  .slick-active
+    &:before
+      display: none
+    span
+      color: #fff
+      background: transparent
+      -webkit-text-fill-color: inherit
+      -webkit-background-clip: inherit
+
 .tabs__content
   padding: 89px 0 0
 
@@ -761,6 +799,7 @@ h1
       z-index: 1
 
 
+
 .product-slider-previews__box
   background: #F2F2F2
   width: 128px
@@ -779,6 +818,8 @@ h1
     align-items: center
     justify-content: center
     background: #F2F2F2
+    img
+      max-height: 100%
 
 .slick-slide
   outline: none
@@ -788,6 +829,10 @@ h1
   padding: 0 0 0 20px
   .line-wrapper
     padding: 0 0 0 10px
+
+.product-slider-previews2 .slick-current .product-slider-previews__box:after
+  background: #828282
+
 
 .name-product
   width: 100%
@@ -916,6 +961,10 @@ h1
     border-radius: inherit
     background: linear-gradient(left, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
 
+.btn-border2
+  border: 2px solid #828282
+  &:after, &:before
+    display: none
 
 .btn-accent
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3)
@@ -949,6 +998,29 @@ h1
   &:hover, &:focus
     &:after
       background: #171717
+
+.btn-accent2
+  border: none
+  background: #BB2214
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3)
+  &:before, &:after
+    display: none
+  &:hover
+    background: #8E0E02
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3)
+  &:focus
+    background: #8E0E02
+    box-shadow: none
+  span
+    background: transparent
+    -webkit-text-fill-color: inherit
+    -webkit-background-clip: inherit
+    color: #fff
+
+.btn-group
+  .btn-accent2
+    border: 2px solid #828282
+
 
 .reviews
   border:
@@ -999,6 +1071,10 @@ h1
     font-size: 24px
     text-transform: uppercase
     font-weight: bold
+
+.reviews-title2
+  background: #727272
+  color: #fff
 
 .reviews-item
   width: 100%
@@ -1061,6 +1137,8 @@ h1
   flex-direction: column
   align-items: flex-start
 
+
+
 .form
   h3
     text-align: center
@@ -1103,6 +1181,23 @@ h1
     width: 201px
     height: 50px
     cursor: pointer
+
+.form-reviews2
+  background: linear-gradient(229.67deg, #C4C4C4 -23.04%, #4D4D4D 122.76%)
+
+.form2
+  h3
+    color: #fff
+    background: transparent
+    -webkit-text-fill-color: inherit
+    -webkit-background-clip: inherit
+  label
+    &:before
+      display: none
+    textarea, input
+      border: 1px solid #fff
+      background: transparent
+
 
 .form-group
   width: 100%
@@ -1170,6 +1265,12 @@ textarea
   .container
     align-items: flex-start
 
+.shops2
+  background: url("../img/bg3.svg") no-repeat center
+    size: cover
+  h2
+    color: #BB2214
+
 .shops-content
   width: calc(100% - 575px)
   padding: 43px 0
@@ -1232,6 +1333,11 @@ strong
   img
     position: relative
     z-index: 1
+
+.help-img2
+  &:before
+    background: url("../img/bg-gradient2.svg") no-repeat center
+      size: contain
 
 .help-content
   width: calc(100% - 500px)
