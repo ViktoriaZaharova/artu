@@ -149,6 +149,21 @@
     max-width: 500px
     margin: 0 0 0 auto
 
+  .list-characteristics
+    margin: 30px 0 34px
+
+  .product-slider-previews
+    padding: 0 33px
+
+  .products-slider-wrapper
+    max-width: 482px
+
+  .products-information-wrapper
+    width: calc(100% - 482px)
+
+  .document-wrapper
+    padding: 26px 0 0
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
@@ -173,10 +188,89 @@
 
 
 @media only screen and (max-width : 992px)
-	/**/
+  .product-slider__box
+    height: 393px
+    padding: 36px 80px
 
+  .products-slider-wrapper
+    max-width: 354px
+
+  .products-information-wrapper
+    width: calc(100% - 354px)
+
+  .product-slider-previews
+    padding: 0 11px
+
+  .product-slider-previews__box
+    width: 103px
+    height: 103px
+    .img
+      padding: 10px 27px
+
+  .product-slider
+    margin: 0 0 18px
+
+  .tabs__content
+    padding: 55px 0 0
+
+  .reviews
+    margin: 42px 0 0
+    padding: 36px 0 34px
+
+  .reviews-preview
+    padding: 0 15px
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 950px)
+  .main-logo
+    max-width: 158px
+    margin: 0 0 59px
+
+  h1
+    font-size: 40px
+    text-align: left
+    margin: 0
+
+  .title-description
+    margin: 33px 0 0
+    text-align: left
+    font-size: 20px
+
+  .main-home__content
+    max-width: 330px
+    .box-text
+      display: none
+
+  .main-menu li
+    margin: 0 30px 0 0
+
+  .main-home__info
+    display: block
+    margin: 35px 0 50px
+
+  .main-home__slider-wrapper
+    max-width: 340px
+    padding: 80px 0 28px
+    &:before
+      width: 800px
+      height: 100%
+      bottom: auto
+      top: 50%
+      right: auto
+      left: 50%
+      transform: translate(-50%,-50%)
+      -webkit-background-size: 100%
+      background-size: 100%
+    &:after
+      width: 485px
+      height: 420px
+
+  .main-home__box
+    max-width: 231px
+
+  .catalog
+    margin: 14px 0 30px
+
 @media only screen and (max-width : 860px)
   .home
     flex-direction: column-reverse
@@ -291,6 +385,101 @@
 
   .box-variable-container__close
     display: flex
+
+  .phone
+    margin: 0 0 0 30px
+    font-size: 24px
+
+  .btn-burger
+    display: flex
+
+  main
+    .main-menu
+      display: none
+
+  .main-home__slider-wrapper
+    padding: 48px 0 28px
+    &:after
+      top: 15px
+      right: -45px
+
+  .tabs__caption
+    .active
+      box-shadow: none
+      background: transparent
+      span
+        color: #000
+        background: transparent
+        -webkit-text-fill-color: inherit
+        -webkit-background-clip: inherit
+        font-weight: normal
+      &:before, &:after
+        display: none
+    &:before
+      width: calc(100% + 30px)
+      left: -15px
+    li
+      margin: 2px 0 0
+      width: 239px
+    .slick-prev
+      left: calc(50% - 330px)
+    .slick-next
+      right: calc(50% - 330px)
+    .slick-arrow
+      top: 44%
+    .slick-current
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3)
+      &:before
+        display: inline-block
+        content: ''
+        position: absolute
+        left: -2px
+        bottom: 0
+        width: calc(100% + 4px)
+        height: calc(100% + 4px)
+        border-radius: inherit
+        background: -webkit-linear-gradient(-91deg, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: #333333
+        border-radius: inherit
+        display: inline-block
+      span
+        font-size: 18px
+        font-weight: bold
+        background: -webkit-linear-gradient(-91deg, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        width: 100%
+        height: 100%
+
+  .products-information-wrapper
+    .name-product, .line-wrapper, .document-wrapper
+      display: none
+
+
+  .product-title-mobile
+    display: block
+    margin: 0 0 41px
+    width: 100%
+
+  .list-characteristics
+    margin: 0 0 54px
+
+  .name-product
+    margin: 0 0 22px
+
+  .document-mobile
+    width: 100%
+    display: block
+
+  .main-home__content
+    max-width: 323px
 
 
 

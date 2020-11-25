@@ -36,7 +36,34 @@ $(window).on('load resize', function() {
         $(".home-menu.slick-initialized").slick("unslick");
     }
 
+    if (checkWidth < 861)  {
+        $('.tabs__caption:not(.slick-initialized)').slick({
+            dots: false,
+            // infinite: false,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            arrows: true,
+            asNavFor: '.tab_container',
+            nextArrow: '<button type="button" class="slick-next"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                '    <path d="M0.999999 1L7 7L1 13" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+                '</svg>\n</button>',
+            prevArrow: '<button type="button" class="slick-prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                '    <path d="M7 13L1 7L7 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+                '</svg>\n</button>'
+        });
 
+        $('.tab_container:not(.slick-initialized)').slick({
+            dots: false,
+            // infinite: false,
+            slidesToShow: 1,
+            arrows: false,
+            fade: true
+        });
+    }
+    else {
+        $(".tabs__caption.slick-initialized").slick("unslick");
+    }
 });
 // slick active
 
@@ -82,17 +109,34 @@ $('.go_to').click(function () {
     return false;
 });
 
-$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+$('ul.tabs__caption').on('click', 'li:not(.slick-active)', function () {
     $(this)
-        .addClass('active').siblings().removeClass('active')
+        .addClass('slick-active').siblings().removeClass('slick-active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 
     $(".product-slider").slick('reinit');
     $(".product-slider-previews").slick('reinit');
 });
 
+
 $('.review-view').click(function (e) {
     e.preventDefault();
     $('.reviews-preview').fadeOut();
     $('.reviews-hidden').fadeIn();
 });
+
+$('.btn-burger').click(function () {
+    $('.mobile-menu').fadeIn();
+});
+
+$('.btn-close').click(function () {
+    $('.mobile-menu').fadeOut();
+});
+
+if ($(".main-home__content .box-text").length){
+    $(".main-home__content .box-text").clone().appendTo('.main-home__info');
+}
+if ($(".main-home__content .main-logo").length){
+    $(".main-home__content .main-logo").clone().appendTo('.main-home__info');
+}
+
