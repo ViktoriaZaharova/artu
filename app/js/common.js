@@ -115,9 +115,13 @@ $('ul.tabs__caption').on('click', 'li:not(.slick-active)', function () {
         .addClass('slick-active').siblings().removeClass('slick-active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 
-    $(".product-slider").slick('reinit');
-    $(".product-slider-previews").slick('reinit');
+    // $(".product-slider").slick('reinit');
+    // $(".product-slider-previews").slick('reinit');
+    $(".tabs__content.active .product-slider").slick('reinit');
+    $(".tabs__content.active .product-slider-previews").slick('reinit');
 });
+
+
 
 
 $('.review-view').click(function (e) {
@@ -151,3 +155,13 @@ $('.btn-load').click(function (e) {
     $(this).hide();
 });
 
+$('.btn-menu').click(function (e) {
+    e.preventDefault();
+    $('.box-variable-container').fadeIn();
+});
+
+
+$('.box-variable-container__close').click(function (e) {
+    e.preventDefault();
+    $('.box-variable-container').fadeOut();
+});

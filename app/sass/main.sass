@@ -277,30 +277,30 @@ a
       &:before
         display: none
 
-  .active
-    border-radius: 5px
+    &:hover
+      border-radius: 5px
 
-    a
-      background: #333333
-      font-weight: bold
-      z-index: 1
-      position: relative
+      a
+        background: #333333
+        font-weight: bold
+        z-index: 1
+        position: relative
 
-      span
-        background: -webkit-linear-gradient(-91deg, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
+        span
+          background: -webkit-linear-gradient(-91deg, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
 
-    &:before
-      content: ''
-      position: absolute
-      left: 0
-      top: 0
-      width: calc(100% + 2px)
-      height: calc(100% + 2px)
-      z-index: 0
-      border-radius: inherit
-      background: linear-gradient(left, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: calc(100% + 2px)
+        height: calc(100% + 2px)
+        z-index: 0
+        border-radius: inherit
+        background: linear-gradient(left, rgba(213, 154, 108, 1) 0%, rgba(196, 130, 74, 1) 19%, rgba(250, 218, 160, 1) 41%, rgba(255, 250, 201, 1) 69%, rgba(230, 135, 0, 1) 100%)
 
 .home-right
   padding: 44px 115px 108px 0
@@ -376,15 +376,19 @@ a
 .box-variable-container
   z-index: 2
   width: 100%
+  display: none
 
 .box-variable-container__close
-  display: none
+  display: flex
   align-items: center
   justify-content: center
   width: 27px
   height: 27px
   margin: 0 0 -10px auto
-
+  position: absolute
+  right: -27px
+  top: -27px
+  cursor: pointer
 
 .container
   max-width: 1200px
@@ -757,6 +761,8 @@ h1
   justify-content: center
   height: 599px
   padding: 55px 90px
+  img
+    max-height: 100%
 
 .product-slider-previews
   width: 100%

@@ -72,8 +72,8 @@
   .home-left
     padding: 88px 14px 56px
     position: relative
-    .box-variable-wrap
-      display: none
+    //.box-variable-wrap
+    //  display: none
     .home-img
       margin: 0 0 98px
       max-width: 223px
@@ -89,14 +89,16 @@
 
   .home-menu-wrapper
     &:after
-      margin: 0 auto
-      height: 98px
+      margin: 40px auto 0
+      height: 218px
     &:before
       margin: 0 auto 40px
       height: 218px
-    .box-variable-wrap
-      display: block
-      margin: 19px auto 0
+    //.box-variable-wrap
+    //  display: block
+    //  margin: 19px auto 0
+
+
 
   .logo1
     max-width: 204px
@@ -116,7 +118,14 @@
         transform: none
 
   .box-variable-container
-    width: auto
+    position: absolute
+    width: 274px
+    right: -210px
+    bottom: 97px
+
+  .box-variable-wrap
+    margin: 0
+
 
 @media only screen and (max-width : 1200px)
   .phone
@@ -407,17 +416,15 @@
 
   .box-variable-container
     position: absolute
-    top: 8px
-    right: 244px
+    top: 32px
+    right: 287px
+    width: 189px
 
   .home-item-col
     position: initial
 
   .box-variable a
     height: 42px
-
-  .box-variable-container__close
-    display: flex
 
   .phone
     margin: 0 0 0 30px
@@ -610,8 +617,8 @@
     margin: 0 auto -10px 0
 
   .box-variable-container
-    bottom: 72px
-    right: 32px
+    bottom: 62px
+    right: 59px
     top: auto
     z-index: 1
 
@@ -830,7 +837,10 @@
       right: calc(50% - 130px)
 
   .box-variable-container
-    display: none
+    bottom: auto
+    right: auto
+    left: 50%
+    transform: translate(-50%,0)
 
 
 @media only screen and (max-width : 620px)
@@ -967,6 +977,16 @@
     padding: 49px 22px 73px
     h3
       margin: 0 auto 22px
+
+  .home-menu a
+    font-size: 16px
+
+//@media only screen and (max-width : 420px)
+//  .home .slick-prev
+//    left: 77px
+//
+//  .home .slick-next
+//    right: 77px
 
 @media only screen and (max-width : 400px)
   .product-slider-previews__box
