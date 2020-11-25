@@ -669,6 +669,10 @@
 
 
 
+@media only screen and (max-width : 730px)
+  .help-img
+    max-width: 610px
+
 @media only screen and (max-width : 700px)
   header
     padding: 24px 0 21px
@@ -756,6 +760,29 @@
     margin: 0 0 24px
 
 
+  .shops-content
+    padding: 30px 20px 28px
+    h2
+      max-width: 300px
+      margin: 0 0 19px
+    h3
+      margin: 0 0 30px
+
+  .help-img
+    max-width: 420px
+    margin: -50px auto 0
+
+  .help-content
+    max-width: none
+    margin: 0
+    padding: 33px 0 98px
+    h3
+      max-width: 375px
+      margin: 0 0 39px
+    p
+      margin: 0 0 35px
+    .form
+      margin: 0
 
 
 @media only screen and (max-width : 650px)
@@ -817,6 +844,16 @@
   .list-document
     margin: 0 auto 34px
 
+  .reviews
+    padding: 40px 0 55px
+    margin: 37px 0 0
+
+  .reviews-preview
+    padding: 0
+    h3
+      text-align: center
+
+
 @media only screen and (max-width : 575px)
   .logo2
     max-width: 139px
@@ -847,7 +884,55 @@
   .logo1
     max-width: 136px
 
+  .reviews-title
+    text-align: center
+    padding: 21px 0 9px
 
+  .reviews-item
+    padding: 15px 15px 20px
+    display: none
+    &:nth-child(-n+5)
+      display: none
+    &:nth-child(-n+3)
+      display: flex
+
+  .reviews-item__left
+    width: 100%
+    margin: 0 0 37px
+
+  .reviews-item__right
+    width: 100%
+    margin: 0
+
+  .name-user
+    margin: 20px 0
+
+  .btn-load
+    margin: 46px auto 0
+
+  .form-reviews
+    margin: 61px 0 auto
+    position: relative
+    padding: 38px 20px 73px
+    h3
+      margin: 0 auto 26px
+    label
+      margin: 0 0 22px
+
+  .form-group
+    flex-direction: column
+    align-items: flex-start
+    label
+      max-width: none
+      margin: 0 0 22px
+
+  .list-city
+    column-count: 2
+
+  .shops .form-reviews
+    padding: 49px 22px 73px
+    h3
+      margin: 0 auto 22px
 
 @media only screen and (max-width : 400px)
   .product-slider-previews__box
@@ -862,30 +947,5 @@
     .slick-next
       right: 0
 
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .help-content h2
+    font-size: 40px

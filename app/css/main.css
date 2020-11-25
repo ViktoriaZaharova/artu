@@ -1088,14 +1088,16 @@ h1 {
   width: 100%;
   padding: 25px 20px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .reviews-item:nth-child(-n+5) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .reviews-item:before {
     content: '';
     position: absolute;
@@ -2089,6 +2091,10 @@ strong {
               box-sizing: border-box;
       width: 100%; } }
 
+@media only screen and (max-width: 730px) {
+  .help-img {
+    max-width: 610px; } }
+
 @media only screen and (max-width: 700px) {
   header {
     padding: 24px 0 21px; }
@@ -2175,7 +2181,28 @@ strong {
   .rating-wrapper {
     margin: 0 0 20px; }
   .product-title-mobile {
-    margin: 0 0 24px; } }
+    margin: 0 0 24px; }
+  .shops-content {
+    padding: 30px 20px 28px; }
+    .shops-content h2 {
+      max-width: 300px;
+      margin: 0 0 19px; }
+    .shops-content h3 {
+      margin: 0 0 30px; }
+  .help-img {
+    max-width: 420px;
+    margin: -50px auto 0; }
+  .help-content {
+    max-width: none;
+    margin: 0;
+    padding: 33px 0 98px; }
+    .help-content h3 {
+      max-width: 375px;
+      margin: 0 0 39px; }
+    .help-content p {
+      margin: 0 0 35px; }
+    .help-content .form {
+      margin: 0; } }
 
 @media only screen and (max-width: 650px) {
   .home-menu li {
@@ -2224,7 +2251,14 @@ strong {
         -ms-flex-align: center;
             align-items: center; }
   .list-document {
-    margin: 0 auto 34px; } }
+    margin: 0 auto 34px; }
+  .reviews {
+    padding: 40px 0 55px;
+    margin: 37px 0 0; }
+  .reviews-preview {
+    padding: 0; }
+    .reviews-preview h3 {
+      text-align: center; } }
 
 @media only screen and (max-width: 575px) {
   .logo2 {
@@ -2250,7 +2284,56 @@ strong {
         top: -22px;
         right: -74px; }
   .logo1 {
-    max-width: 136px; } }
+    max-width: 136px; }
+  .reviews-title {
+    text-align: center;
+    padding: 21px 0 9px; }
+  .reviews-item {
+    padding: 15px 15px 20px;
+    display: none; }
+    .reviews-item:nth-child(-n+5) {
+      display: none; }
+    .reviews-item:nth-child(-n+3) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .reviews-item__left {
+    width: 100%;
+    margin: 0 0 37px; }
+  .reviews-item__right {
+    width: 100%;
+    margin: 0; }
+  .name-user {
+    margin: 20px 0; }
+  .btn-load {
+    margin: 46px auto 0; }
+  .form-reviews {
+    margin: 61px 0 auto;
+    position: relative;
+    padding: 38px 20px 73px; }
+    .form-reviews h3 {
+      margin: 0 auto 26px; }
+    .form-reviews label {
+      margin: 0 0 22px; }
+  .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .form-group label {
+      max-width: none;
+      margin: 0 0 22px; }
+  .list-city {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; }
+  .shops .form-reviews {
+    padding: 49px 22px 73px; }
+    .shops .form-reviews h3 {
+      margin: 0 auto 22px; } }
 
 @media only screen and (max-width: 400px) {
   .product-slider-previews__box {
@@ -2262,25 +2345,6 @@ strong {
     .product-slider-previews .slick-prev {
       left: 0; }
     .product-slider-previews .slick-next {
-      right: 0; } }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }
+      right: 0; }
+  .help-content h2 {
+    font-size: 40px; } }

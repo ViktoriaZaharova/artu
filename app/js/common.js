@@ -145,3 +145,9 @@ if ($(".main-home__content .title-description").length){
     $(".main-home__content .title-description").clone().appendTo('.main-home__info');
 }
 
+$('.btn-load').click(function (e) {
+    e.preventDefault();
+    $(this).parents('.reviews-hidden').find('.reviews-item:hidden').css('display', 'flex');
+    $(this).hide();
+});
+
