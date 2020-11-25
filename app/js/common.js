@@ -137,7 +137,11 @@ $('.btn-close').click(function () {
 if ($(".main-home__content .box-text").length){
     $(".main-home__content .box-text").clone().appendTo('.main-home__info');
 }
-if ($(".main-home__content .main-logo").length){
-    $(".main-home__content .main-logo").clone().appendTo('.main-home__info');
+if ($(".main-home__content h1").length){
+    $(".main-home__content h1").clone().appendTo('.main-home__info');
+}
+
+if ($(".main-home__content .title-description").length){
+    $(".main-home__content .title-description").clone().appendTo('.main-home__info');
 }
 

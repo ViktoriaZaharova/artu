@@ -430,7 +430,7 @@
       right: -45px
 
   .tabs__caption
-    .active
+    .slick-active
       box-shadow: none
       background: transparent
       span
@@ -546,12 +546,16 @@
   .help-content
     padding: 39px 0 83px
     margin: 0 0 0 -200px
+    max-width: 460px
     p
       max-width: 349px
       margin: 0 0 35px auto
     .form
       max-width: 349px
       margin: 0 0 0 auto
+
+  header
+    padding: 38px 0
 
 @media only screen and (min-width : 650px) and (max-width: 735px)
   .home
@@ -665,6 +669,95 @@
 
 
 
+@media only screen and (max-width : 700px)
+  header
+    padding: 24px 0 21px
+    .container
+      flex-direction: column
+      align-items: flex-end
+      justify-content: flex-start
+
+  .btn-burger
+    position: absolute
+    left: 20px
+    top: 50%
+    transform: translate(0,-50%)
+
+  .phone
+    margin: 11px 0 0
+
+  .main-home__content
+
+    h1, .title-description
+      display: none
+
+  .main-home__info
+    display: flex
+    flex-direction: column
+    margin: 44px 0 59px
+    text-align: center
+
+    h1, .title-description
+      display: block
+      order: -1
+      text-align: center
+
+  .main-logo
+    max-width: 140px
+    margin: 0
+
+  .main-home__slider-wrapper
+    padding: 0
+    max-width: none
+    &:before
+      width: 414px
+      height: 582px
+      background: url("../img/slider-overlay-mob.svg") no-repeat center
+        size: contain
+      left: auto
+      right: -15px
+      transform: translate(0,-50%)
+    &:after
+      width: 485px
+      height: 420px
+      top: -77px
+      right: -103px
+
+  .main-home__box
+    max-width: 217px
+
+  .title-description
+    margin: 20px auto 25px
+
+  .tabs__caption li
+    width: 229px
+
+  .tabs__caption .slick-prev
+    left: calc(50% - 150px)
+
+  .tabs__caption .slick-next
+    right: calc(50% - 150px)
+
+  .name-product
+    text-align: center
+    padding: 0
+
+  .tabs__content
+    padding: 50px 0 0
+
+  .line-wrapper
+    flex-direction: column
+    align-items: center
+
+  .rating-wrapper
+    margin: 0 0 20px
+
+  .product-title-mobile
+    margin: 0 0 24px
+
+
+
+
 @media only screen and (max-width : 650px)
   .home-menu li
     width: 259px
@@ -678,6 +771,51 @@
   .box-variable-container
     display: none
 
+
+@media only screen and (max-width : 620px)
+  .products-slider-wrapper
+    max-width: 374px
+    margin: 0 auto
+
+  .product-slider__box
+    height: 469px
+    padding: 42px 70px
+
+  .products-information-wrapper
+    width: 100%
+    padding: 0
+    margin: 38px 0 0
+
+  .list-characteristics
+    max-width: none
+    margin: 0 0 42px
+
+  .product-slider-previews__box
+    width: 118px
+    height: 118px
+
+  .product-slider-previews
+    padding: 0
+
+  .product-slider-previews .slick-next
+    right: -14px
+
+  .product-slider-previews .slick-prev
+    left: -14px
+
+  .document-wrapper
+    padding: 37px 0 0
+    h3
+      text-align: center
+      margin: 0 auto 25px
+
+  .document-wrapper__box
+
+    flex-direction: column
+    align-items: center
+
+  .list-document
+    margin: 0 auto 34px
 
 @media only screen and (max-width : 575px)
   .logo2
@@ -711,8 +849,18 @@
 
 
 
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 400px)
+  .product-slider-previews__box
+    width: 80px
+    height: 80px
+    margin: 0 auto
+
+  .product-slider-previews
+    padding: 0 10px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
 
 
 /*==========  Mobile First  ==========*/
