@@ -131,7 +131,7 @@ $('.review-view').click(function (e) {
 });
 
 $('.btn-burger').click(function () {
-    $('.mobile-menu').fadeIn();
+    $('.mobile-menu').fadeToggle();
 });
 
 $('.btn-close').click(function () {
@@ -164,4 +164,14 @@ $('.btn-menu').click(function (e) {
 $('.box-variable-container__close').click(function (e) {
     e.preventDefault();
     $('.box-variable-container').fadeOut();
+});
+
+$("[name='phone']").mask("+7 (999) 999-99-99");
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('header').addClass('fixed');
+    } else {
+        $('header').removeClass('fixed');
+    }
 });

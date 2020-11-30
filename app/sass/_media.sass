@@ -171,7 +171,7 @@
     width: calc(100% - 482px)
 
   .document-wrapper
-    padding: 26px 0 0
+    padding: 26px 10px 0 0
 
   .reviews-item__left
     width: 256px
@@ -254,6 +254,10 @@
     max-width: 470px
     margin: 0 0 0 -100px
 
+  .tabs__caption
+    li
+      width: auto
+      padding: 17px 10px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 950px)
@@ -261,9 +265,6 @@
     max-width: 158px
     margin: 0 0 59px
 
-  .main-logo2
-    max-width: 195px
-    margin: 46px auto 70px
 
   h1
     font-size: 40px
@@ -310,8 +311,12 @@
   .catalog
     margin: 14px 0 30px
 
-  .main-home__box2
-    max-width: 177px
+  .vargaz
+    .main-home__box
+      max-width: 177px
+    .main-logo
+      max-width: 195px
+      margin: 46px auto 70px
 
 @media only screen and (max-width : 860px)
   .home
@@ -437,6 +442,9 @@
     .main-menu
       display: none
 
+  .main-home
+    padding: 104px 0 0
+
   .main-home__slider-wrapper
     padding: 48px 0 28px
     &:after
@@ -497,16 +505,18 @@
         width: 100%
         height: 100%
 
-  .tabs__caption2
 
-    .slick-active
-      &:before
-        display: none
-      span
-        color: #fff
-        background: transparent
-        -webkit-text-fill-color: inherit
-        -webkit-background-clip: inherit
+  .vargaz
+    .tabs__caption
+
+      .slick-active
+        &:before
+          display: none
+        span
+          color: #fff
+          background: transparent
+          -webkit-text-fill-color: inherit
+          -webkit-background-clip: inherit
 
 
   .products-information-wrapper
@@ -809,22 +819,20 @@
     .form
       margin: 0
 
-  .main-logo2
-    margin: 20px 0 0
-    max-width: 118px
-
-  .main-home__slider-wrapper2:before
-    background: url("../img/slider-overlay-mob2.svg") no-repeat center
-      size: contain
-
-  .main-home__slider-wrapper2:after
-    width: 501px
-    height: 417px
-    right: -85px
-    top: -37px
-
-  .main-home__box2
-    max-width: 192px
+  .vargaz
+    .main-home__box
+      max-width: 192px
+    .main-logo
+      margin: 20px 0 0
+      max-width: 118px
+    .main-home__slider-wrapper:before
+      background: url("../img/slider-overlay-mob2.svg") no-repeat center
+        size: contain
+    .main-home__slider-wrapper:after
+      width: 501px
+      height: 417px
+      right: -85px
+      top: -37px
 
 @media only screen and (max-width : 650px)
   .home-menu li
@@ -875,7 +883,7 @@
     left: -14px
 
   .document-wrapper
-    padding: 37px 0 0
+    padding: 37px 10px 0 0
     h3
       text-align: center
       margin: 0 auto 25px
@@ -885,8 +893,6 @@
     flex-direction: column
     align-items: center
 
-  .list-document
-    margin: 0 auto 34px
 
   .reviews
     padding: 40px 0 55px
@@ -981,12 +987,15 @@
   .home-menu a
     font-size: 16px
 
-//@media only screen and (max-width : 420px)
-//  .home .slick-prev
-//    left: 77px
-//
-//  .home .slick-next
-//    right: 77px
+  .document-wrapper__box
+    width: 100%
+    margin: 0 0 20px
+
+  .document-wrapper
+    padding: 37px 0 0
+    align-items: center
+    justify-content: center
+
 
 @media only screen and (max-width : 400px)
   .product-slider-previews__box
@@ -1009,3 +1018,6 @@
 
   .phone
     font-size: 20px
+
+  .main-home
+    padding: 100px 0 0
