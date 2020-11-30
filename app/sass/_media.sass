@@ -896,6 +896,7 @@
       flex-direction: column
       align-items: flex-end
       justify-content: flex-start
+      padding: 0 20px
 
   .btn-burger
     position: absolute
@@ -907,6 +908,7 @@
     margin: 11px 0 0
 
   .main-home__content
+    padding: 0
 
     h1, .title-description
       display: none
@@ -916,7 +918,11 @@
     flex-direction: column
     margin: 44px 0 59px
     text-align: center
-
+    padding: 0
+    .box-text
+      max-width: 300px
+      margin: 0 auto
+      line-height: 19px
     h1, .title-description
       display: block
       order: -1
@@ -924,7 +930,7 @@
 
   .main-logo
     max-width: 140px
-    margin: 0
+    margin: 6px 0 0px -6px
 
   .main-home__slider-wrapper
     padding: 0
@@ -941,13 +947,30 @@
       width: 485px
       height: 420px
       top: -77px
-      right: -103px
+      right: -123px
 
   .main-home__box
     max-width: 217px
+    margin: 0 auto
+
+  .btn-360
+    right: 0
+    bottom: -10px
+
+  .main-home__slider .slick-next
+    right: 0
+
+  .main-home__slider .slick-prev
+    left: 0
+
+  .catalog
+    margin: 29px 0 38px
+
+  .line-wrapper
+    padding: 0
 
   .title-description
-    margin: 20px auto 25px
+    margin: 20px auto 28px
 
   .tabs__caption li
     width: 229px
@@ -980,13 +1003,14 @@
     padding: 30px 20px 28px
     h2
       max-width: 300px
-      margin: 0 0 19px
+      margin: 0 0 15px
     h3
       margin: 0 0 30px
 
   .help-img
     max-width: 420px
     margin: -50px auto 0
+
 
   .help-content
     max-width: none
@@ -1044,7 +1068,7 @@
   .products-information-wrapper
     width: 100%
     padding: 0
-    margin: 38px 0 0
+    margin: 43px 0 0
 
   .list-characteristics
     max-width: none
@@ -1076,13 +1100,20 @@
 
 
   .reviews
-    padding: 40px 0 55px
+    padding: 40px 0 52px
     margin: 37px 0 0
 
   .reviews-preview
     padding: 0
     h3
       text-align: center
+
+  .review-view
+    text-align: center
+    margin: -20px auto 0
+
+  .reviews-preview .box-text:before
+    height: 144px
 
 
 @media only screen and (max-width : 575px)
@@ -1163,14 +1194,14 @@
   .shops .form-reviews
     padding: 49px 22px 73px
     h3
-      margin: 0 auto 22px
+      margin: 0 auto 28px
 
   .home-menu a
     font-size: 16px
 
   .document-wrapper__box
     width: 100%
-    margin: 0 0 20px
+    margin: 0 0 36px
 
   .document-wrapper
     padding: 37px 0 0
