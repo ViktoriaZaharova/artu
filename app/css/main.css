@@ -1934,7 +1934,8 @@ strong {
     margin: 0 30px 0 0; }
   .main-home__info {
     display: block;
-    margin: 35px 0 50px; }
+    margin: 16px 0 50px;
+    padding: 0 0 0 30px; }
   .main-home__slider-wrapper {
     max-width: 340px;
     padding: 80px 0 28px; }
@@ -1952,9 +1953,14 @@ strong {
       width: 485px;
       height: 420px; }
   .main-home__box {
-    max-width: 231px; }
+    max-width: 231px;
+    margin: 0 98px 0 auto; }
+  .main-home__slider .slick-prev {
+    left: -44px; }
+  .main-home__slider .slick-next {
+    right: 53px; }
   .catalog {
-    margin: 14px 0 30px; }
+    margin: 35px 0 30px; }
   .vargaz .main-home__box {
     max-width: 177px; }
   .vargaz .main-logo {
@@ -1962,6 +1968,8 @@ strong {
     margin: 46px auto 70px; } }
 
 @media only screen and (max-width: 860px) {
+  header .container {
+    padding: 0 40px; }
   .home {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2080,7 +2088,7 @@ strong {
   .box-variable a {
     height: 42px; }
   .phone {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 40px;
     font-size: 24px; }
   .btn-burger {
     display: -webkit-box;
@@ -2088,13 +2096,20 @@ strong {
     display: flex; }
   main .main-menu {
     display: none; }
+  .main-logo {
+    margin: 16px 0 59px 0; }
+  .main-home__content {
+    padding: 0 0 0 20px; }
   .main-home {
     padding: 104px 0 0; }
   .main-home__slider-wrapper {
     padding: 48px 0 28px; }
     .main-home__slider-wrapper:after {
       top: 15px;
-      right: -45px; }
+      right: -59px; }
+  .btn-360 {
+    right: 52px;
+    bottom: 27px; }
   .tabs__caption .slick-active {
     background: transparent; }
     .tabs__caption .slick-active span {
@@ -2105,9 +2120,6 @@ strong {
       font-weight: normal; }
     .tabs__caption .slick-active:before, .tabs__caption .slick-active:after {
       display: none; }
-  .tabs__caption:before {
-    width: calc(100% + 30px);
-    left: -15px; }
   .tabs__caption li {
     margin: 2px 0 0;
     width: 239px; }
@@ -2164,12 +2176,17 @@ strong {
   .list-characteristics {
     margin: 0 0 54px; }
   .name-product {
-    margin: 0 0 22px; }
+    margin: 0 0 22px;
+    padding: 0 0 0 20px; }
+  .line-wrapper {
+    padding: 0 0 0 18px; }
   .document-mobile {
     width: 100%;
     display: block; }
   .document-wrapper {
-    padding: 26px 50px 0 0; }
+    padding: 36px 56px 0 18px; }
+    .document-wrapper h3 {
+      margin: 0 0 24px; }
   .main-home__content {
     max-width: 323px; }
   .reviews-item__left {
@@ -2178,6 +2195,12 @@ strong {
     width: calc(100% - 193px); }
   .reviews-title {
     padding: 29px 25px; }
+  .review-view {
+    margin: 11px 0 0; }
+  .consent {
+    margin: 5px auto 33px; }
+  .help-img {
+    margin: -60px 0 0 -224px; }
   .shops h2 {
     max-width: none; }
   .shops .container {
@@ -2200,19 +2223,62 @@ strong {
     .shops-content h3 {
       margin: 0 0 32px; }
   .help-content {
-    padding: 39px 0 83px;
-    margin: 0 0 0 -200px;
+    padding: 45px 0 83px;
+    margin: 0 0 0 -159px;
     max-width: 460px; }
+    .help-content h2 {
+      margin: 0 0 83px; }
     .help-content p {
       max-width: 349px;
-      margin: 0 0 35px auto; }
+      margin: 0 0 41px auto; }
     .help-content .form {
-      max-width: 349px;
+      max-width: 343px;
       margin: 0 0 0 auto; }
   header {
-    padding: 38px 0; } }
+    padding: 38px 0; }
+  .product-slider-previews .slick-next {
+    right: 0; }
+  .product-slider-previews .slick-prev {
+    left: 0; } }
 
-@media only screen and (min-width: 650px) and (max-width: 735px) {
+@media only screen and (min-width: 650px) and (max-width: 736px) {
+  .main-home__content {
+    padding: 0; }
+  .main-home__info {
+    padding: 0;
+    margin: 2px 0 67px; }
+  .main-home__box {
+    margin: 0 88px 0 auto; }
+  .main-home__slider-wrapper {
+    padding: 59px 0 28px; }
+  .main-home__slider .slick-prev {
+    left: -32px; }
+  .main-home__slider .slick-next {
+    top: 35px; }
+  .btn-360 {
+    right: 35px; }
+  .catalog {
+    margin: 18px 0 34px; }
+  .name-product, .line-wrapper {
+    padding: 0; }
+  .products-slider-wrapper {
+    max-width: 339px; }
+  .list-characteristics {
+    margin: 0 0 37px; }
+  .document-wrapper {
+    padding: 36px 52px 0 0; }
+  .reviews-preview {
+    padding: 0; }
+  .shops-content {
+    padding: 43px 30px 56px; }
+  .shops-content h2 {
+    margin: 0 0 27px; }
+  .help-content {
+    margin: 0 0 0 -183px; }
+  .help-content .consent {
+    max-width: 300px; }
+  header .container {
+    padding: 0 22px; }
   .home {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2221,6 +2287,8 @@ strong {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
+  .phone {
+    margin: 0 0 0 60px; }
   .home-item {
     width: 50%; }
   .home-right {
