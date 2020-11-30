@@ -430,7 +430,7 @@ header
   display: flex
   align-items: center
   color: #fff
-  margin: 0 4px 0 45px
+  margin: 0 36px 0 45px
   font-size: 24px
   font-weight: bold
 
@@ -505,8 +505,8 @@ h1
   margin: -9px 0 43px
 
 .main-home__content
-  padding: 0 0 0 57px
-  max-width: 600px
+  padding: 0 0 0 30px
+  max-width: 569px
   width: 100%
   position: relative
   z-index: 1
@@ -516,7 +516,7 @@ h1
 
 .main-menu
   position: absolute
-  right: 18px
+  right: 0
   top: 36px
   display: flex
   align-items: center
@@ -525,8 +525,6 @@ h1
 
   li
     margin: 0 45px 0 0
-    &:last-child
-      margin: 0
     a
       text-transform: uppercase
       color: #333333
@@ -548,7 +546,7 @@ h1
         width: 11px
         height: 11px
         background: url("../img/figure1.svg") no-repeat center
-          size: contain
+          size: 100%
         top: -14px
 
 .main-home__slider
@@ -557,10 +555,10 @@ h1
   z-index: 2
 
   .slick-next
-    right: -23px
+    right: 0
 
   .slick-prev
-    left: 33px
+    left: 0
 
   .slick-arrow
     width: 12px
@@ -582,7 +580,7 @@ h1
   display: flex
   align-items: center
   justify-content: center
-  margin: 0 39px 0 auto
+  margin: 0 auto
 
 .main-home__slider-wrapper
   position: relative
@@ -606,7 +604,7 @@ h1
     position: absolute
     width: 602px
     height: 521px
-    right: 20px
+    right: 41px
     top: 72px
     background: url("../img/decor1.svg") no-repeat center
       size: contain
@@ -619,7 +617,7 @@ h1
   align-items: center
   justify-content: center
   position: absolute
-  right: -21px
+  right: 5px
   bottom: 43px
   z-index: 1
 
@@ -730,7 +728,7 @@ h1
 
 //catalog
 .catalog
-  margin: 62px 0 36px
+  margin: 66px 0 38px
 
 .tabs__content
   display: none
@@ -770,8 +768,8 @@ h1
     background: linear-gradient(270deg, #45ACAF 0%, #C1DAE7 16.15%, #BB2B83 33.33%, #BA2E84 40.8%, #DE8A93 57.81%, #F9F301 75.69%, #E68700 98.16%)
 
   li
-    padding: 17px 5px
-    width: 16.6%
+    padding: 19px 5px
+    width: 16.66666%
     color: #333333
     text-align: center
     position: relative
@@ -854,7 +852,7 @@ h1
 
 .product-slider-previews
   width: 100%
-  padding: 0 25px
+  padding: 0 30px
 
   .slick-next
     right: 0
@@ -920,7 +918,7 @@ h1
 
 .products-information-wrapper
   width: calc(100% - 476px)
-  padding: 0 0 0 20px
+  padding: 0 0 0 30px
   .line-wrapper
     padding: 0 0 0 10px
 
@@ -970,11 +968,11 @@ h1
 .list-characteristics
   max-width: 555px
   width: 100%
-  margin: 22px 0 36px 30px
+  margin: 22px 0 36px 39px
   line-height: 19px
 
   p
-    margin: 0 0 13px
+    margin: 0 0 12px
     &:last-child
       margin: 0
 
@@ -994,7 +992,7 @@ h1
   justify-content: space-between
   flex-wrap: wrap
   border-top: 1px solid #828282
-  padding: 35px 80px 0 20px
+  padding: 35px 44px 0 12px
 
   h3
     width: 100%
@@ -1027,7 +1025,7 @@ h1
   justify-content: center
   position: relative
   width: 241px
-  height: 53px
+  height: 47px
   border-radius: 5px
   font-size: 18px
   color: #333333
@@ -1109,8 +1107,8 @@ h1
   border:
     top: 1px solid #828282
     bottom: 1px solid #828282
-  padding: 47px 0 63px
-  margin: 48px 0 0
+  padding: 49px 0 63px
+  margin: 53px 0 0
 
 
 .reviews-preview
@@ -1118,9 +1116,10 @@ h1
   line-height: 19px
   h4
     font-weight: bold
-    margin: 0 0 10px
+    margin: 0 0 14px
   .box-text
     position: relative
+    line-height: 23px
     &:before
       content: ''
       position: absolute
@@ -1131,7 +1130,7 @@ h1
       height: 70px
   h3
     text-transform: uppercase
-    margin: 0 0 19px
+    margin: 0 0 22px
     width: 100%
     font-size: 20px
     font-weight: bold
@@ -1215,7 +1214,8 @@ h1
   display: flex
   flex-direction: column
   align-items: flex-start
-
+  .btn
+    width: 201px
 
 
 .form
@@ -1237,7 +1237,7 @@ h1
     text-transform: uppercase
   label
     width: 100%
-    margin: 0 0 20px
+    margin: 0 0 30px
     position: relative
     display: block
     border-radius: 5px
@@ -1261,12 +1261,9 @@ h1
       top: -3px
   button
     margin: 0 auto
-    width: 201px
+    width: 156px
     height: 50px
     cursor: pointer
-
-
-
 
 
 
@@ -1308,12 +1305,13 @@ textarea
     color: #fff
 
 .consent
-  margin: 5px auto 25px
+  margin: 5px auto 45px
   text-align: center
   font-style: italic
   max-width: 337px
   width: 100%
   font-size: 14px
+  line-height: 20px
   a
     display: inline
     text-decoration: underline
@@ -1332,6 +1330,8 @@ textarea
     h5
       text-align: center
       margin: 0 auto 35px
+    .btn
+      width: 156px
 
   .container
     align-items: flex-start
@@ -1344,7 +1344,7 @@ textarea
 
 .shops-content
   width: calc(100% - 575px)
-  padding: 43px 0
+  padding: 43px 0 56px 10px
   h2
     text-transform: uppercase
     margin: 0 0 25px
@@ -1353,7 +1353,7 @@ textarea
   h3
     font-weight: bold
     font-size: 20px
-    margin: 0 0 28px
+    margin: 0 0 23px
 
 h2
   font-size: 48px
@@ -1413,7 +1413,7 @@ strong
   h2
     max-width: 600px
     width: 100%
-    margin: 0 0 43px
+    margin: 0 0 50px
     font-size: 44px
   p
     max-width: 476px
