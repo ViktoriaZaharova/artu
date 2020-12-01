@@ -1810,8 +1810,6 @@ strong {
   .main-menu {
     right: 22px;
     top: 40px; }
-    .main-menu li:last-child {
-      margin: 0; }
   .main-logo {
     margin: 4px 0 66px 25px; }
   .main-home__content .box-text {
@@ -1982,8 +1980,6 @@ strong {
     max-width: 330px; }
     .main-home__content .box-text {
       display: none; }
-  .main-menu li {
-    margin: 0 30px 0 0; }
   .main-home__info {
     display: block;
     margin: 16px 0 50px;
