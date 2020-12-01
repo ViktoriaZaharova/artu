@@ -521,10 +521,13 @@ h1
   display: flex
   align-items: center
   flex-wrap: wrap
-  z-index: 2
+  justify-content: space-between
+  max-width: 590px
+  width: 100%
+  z-index: 3
 
   li
-    margin: 0 45px 0 0
+    //margin: 0 45px 0 0
     a
       text-transform: uppercase
       color: #333333
@@ -625,19 +628,32 @@ h1
   header
     background: #727272
   .main-logo
-    margin: 35px auto 54px
-
+    margin: 44px 0 48px 63px
+    max-width: 262px
+  .main-home__box
+    max-width: 239px
+    margin: 0px 176px 0 auto
+  .main-home__content
+    padding: 0 0 0 38px
   h1
     text-shadow: none
     color: #BB2214
     text-align: left
     max-width: 400px
     width: 100%
-
+  .main-home__slider .slick-prev
+    left: -55px
+  .main-home__slider .slick-next
+    right: 63px
+  .main-menu
+    top: 30px
   .title-description
-    margin: -50px 0 62px
-
+    margin: -50px 118px 61px 0
+  .btn-360
+    right: 64px
+    bottom: 50px
   .main-home__slider-wrapper
+    padding: 84px 0 22px
     &:before
       background: url("../img/slider-overlay2.svg") no-repeat center
         size: cover
@@ -647,7 +663,7 @@ h1
       width: 593px
       height: 494px
       right: 10px
-      top: 83px
+      top: 112px
   .tabs__caption
     &:before
       background: #BB2214

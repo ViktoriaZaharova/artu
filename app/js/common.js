@@ -107,6 +107,8 @@ $('.go_to').click(function () {
             scrollTop: $(scroll_el).offset().top
         }, 500);
     }
+    $('.mobile-menu').fadeOut();
+
     return false;
 });
 
@@ -120,8 +122,6 @@ $('ul.tabs__caption').on('click', 'li:not(.slick-active)', function () {
     $(".tabs__content.active .product-slider").slick('reinit');
     $(".tabs__content.active .product-slider-previews").slick('reinit');
 });
-
-
 
 
 $('.review-view').click(function (e) {
@@ -166,7 +166,7 @@ $('.box-variable-container__close').click(function (e) {
     $('.box-variable-container').fadeOut();
 });
 
-$("[name='phone']").mask("+7 (999) 999-99-99");
+$("[type='tel']").mask("+7 (999) 999-99-99");
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
