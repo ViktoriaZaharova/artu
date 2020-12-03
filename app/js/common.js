@@ -84,11 +84,13 @@ $('.product-slider').slick({
     slidesToShow: 1,
     arrows: false,
     fade: true,
+    infinite: false,
     asNavFor: '.product-slider-previews'
 });
 
 $('.product-slider-previews').slick({
     slidesToShow: 3,
+    infinite: false,
     focusOnSelect: true,
     asNavFor: '.product-slider',
     arrows: true,
